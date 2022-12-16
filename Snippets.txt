@@ -1,0 +1,147 @@
+var dogAge = prompt ("Dog age")
+var humanAge = (dogAge-2)*4+21
+alert ("your dog age in Human Year is " + humanAge )
+
+var output = []
+
+var number = 1;
+
+function fizzBuzz() {
+
+    while (number <= 100) {
+        
+   
+    if (number % 3 === 0 && number % 5 ===0) {
+        output.push ("fizz buzz")
+    }
+    else if ( number % 3 === 0 ) {
+         output.push ( "fizz" );
+    }  
+    else if (number % 5 === 0) {
+        output.push ("buzz");       
+    }
+    else {
+         output.push (number);
+    }
+    number++;
+         }
+    console.log(output); 
+}
+
+var tweet = prompt (" compose your tweet");
+var tweetunder140 = tweet.slice(0,140)
+
+alert (tweetunder140);
+
+function isLeap(year) {
+    
+/**************Don't change the code above****************/    
+    
+    //Write your code here.    
+var ifDivisibleby4 = year % 4 ;
+var ifDivisibleby100 = year % 100;
+var ifDivisibleby400 = year % 400; 
+
+if ( ifDivisibleby4 !==0 ) {
+    return 'Not leap year.';  
+}
+   
+if (ifDivisibleby4 === 0 && ifDivisibleby100 === 0) {
+    return 'Leap year.'; 
+}
+if (ifDivisibleby4 === 0 && ifDivisibleby100 === 0 && ifDivisibleby400 === 0){
+    return 'Leap year.';
+}
+if (ifDivisibleby4 === 0 && ifDivisibleby100 === 0 && ifDivisibleby400 !== 0) {
+    return 'Not leap year.'; 
+}
+/**************Don't change the code below****************/    
+
+}
+isLeap (100)
+
+prompt ("your Name");
+prompt ("your Crush Name");
+var n = Math.random();
+n = Math.floor(n*100) + 1;
+if(n  >70 ) { alert("your compatibility is " + n +" % You Rock!");   
+} else {
+    alert("your compatibility is " + n +" %");
+}
+
+
+var yourName = prompt ("your name")
+var calpitaLetter = yourName.slice (0 , 1)
+var restOfName = yourName.slice (1 , yourName.lenght)
+
+alert ("hello " + calpitaLetter.toUpperCase () + restOfName.toLowerCase())
+
+function lifeInWeeks(age) {
+    
+/************Don't change the code above************/    
+    
+    //Write your code here.
+    var remainingTime = 90 - age;
+    var daysRemaining = remainingTime*365;
+    var weeksRemaining = remainingTime*52;
+    var monthsRemaining = remainingTime*12;
+    console.log ("you have: " + daysRemaining + " Days, " + weeksRemaining+ "Weeks, and  " + monthsRemaining+ " Months " )
+    
+/*************Don't change the code below**********/
+}
+
+lifeInWeeks (27)
+
+var guestList = [ "Anglea", "Mario", "Jack", "Martha", "Andrea", "Diego" ];
+
+var guestName = prompt ("Welcome to the Party! Who are you ?");
+
+    if (guestList.includes(guestName)) {
+        alert("Welcome " + guestName);
+    } else {
+        alert("I'm Sorry, you were not invited");
+    }
+
+
+function beer1() {
+    var bottle = 99
+    while (bottle >= 2){
+        console.log (`${bottle} bottles of beer on the wall, ${bottle}  bottles of beer.Take one down and pass it around, ${bottle--}  bottles of beer on the wall. `  );  
+          if (bottle === 1) {
+            console.log ("1 bottle of beer on the wall, "  + bottle-- + " bottle of beer.Take one down and pass it around, no more bottles of beer on the wall."  );
+         } if (bottle === 0 ) {
+            console.log ( "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.");
+        }
+    }
+}
+
+
+
+function whosPaying(names) {
+    
+    var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+    // var len = names.length;
+    // var ran = len * Math.random();
+    // ran = Math.floor(ran);
+    // console.log (ran)
+    
+    // var res = names [ran] + " is going to buy lunch today!";
+    // return res
+    return names[Math.floor(Math.random() * names.length)] + " is going to buy lunch!";
+}
+
+
+function beer() {
+    var bottle = 99
+    while (bottle >= 2){
+        console.log (bottle + " bottles of beer on the wall," + bottle + " bottles of beer.Take one down and pass it around," + bottle-- + " bottles of beer on the wall." );  
+          if (bottle === 1) {
+            console.log ("1 bottle of beer on the wall, "  + bottle-- + " bottle of beer.Take one down and pass it around, no more bottles of beer on the wall."  );
+         } if (bottle === 0 ) {
+            console.log ( "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.");
+        }
+    }
+}
+    
+
+    
